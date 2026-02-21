@@ -16,7 +16,7 @@ while True:
 
     recorder.write(image)
     cv2.imshow("Recording live  !", image)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
+    if cv2.waitKey(1) & 0xFF == 27:
         break
 
 camera.release()
